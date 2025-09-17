@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Zahl dein Bier, du Soze!</title>
+<meta name="theme-color" content="#0b0d10"/>
+<link rel="manifest" href="./manifest.webmanifest"/>
+<link rel="icon" href="./icon-512.png"/>
+<link rel="apple-touch-icon" href="./icon-512.png"/>
+<link rel="stylesheet" href="./styles.css"/>
+</head>
+<body class="app">
+<header class="app-header">
+<div class="status">
+<span class="dot" id="dot-api"></span>
+<span class="dot" id="dot-webhook"></span>
+</div>
+<h1>Zahl dein Bier, du Soze!</h1>
+<button class="icon" id="btn-leaderboard" title="Leaderboard">🏆</button>
+</header>
+
+
+<main id="main">
+<section id="grid" class="grid"></section>
+</main>
+
+
+<footer class="app-footer">
+<span id="mode">Modus: —</span>
+<button id="btn-mode">Modus wechseln</button>
+</footer>
+
+
+<template id="row-tpl">
+<div class="row">
+<div class="name"></div>
+<button class="btn white">Weiß</button>
+<button class="btn black">Schwarz</button>
+</div>
+</template>
+
+
+<div id="toast" class="toast"></div>
+
+
+<script type="module" src="./app.js"></script>
+</body>
+</html>
