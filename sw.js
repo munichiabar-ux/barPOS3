@@ -1,4 +1,4 @@
-const CACHE = 'barpos-v2';
+const CACHE = 'barpos-v3';
 self.addEventListener('install', e=>{
 e.waitUntil(caches.open(CACHE).then(c=> c.addAll(['./','./index.html','./styles.css','./app.js','./icon-512.png','./manifest.webmanifest'])));
 });
