@@ -59,7 +59,7 @@ modeSpan.textContent = `Modus: ${status.mode}`;
 
 btnMode.addEventListener('click', async ()=>{
 const pin = prompt('Admin-PIN? (nur Zahlen, demo: 1234)');
-if (pin !== '1234') return;
+if (pin !== '1883') return;
 const cur = modeSpan.textContent.includes('kiosk') ? 'kiosk':'maintenance';
 const next = cur==='kiosk' ? 'maintenance' : 'kiosk';
 await apiPost('mode', { mode: next });
