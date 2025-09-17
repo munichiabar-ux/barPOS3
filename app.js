@@ -1,4 +1,4 @@
-const API = 'https://script.google.com/macros/s/AKfycbzm7Uy2hqccA7By-UMcftJ1CY1sNj9yN45unXx6YuyjUyOdYbhgHxZ0sn58ZWje4NhnAQ/exec'; // .../exec
+const API = 'https://script.google.com/macros/s/AKfycbwqGKgtD9TD27uSIdgZi3F5qs_gqUFH4GO0AbbZxIJM2JCdFj-8LL1YRgbD69Z7MUm-/exec'; // .../exec
 const SECRET = 'MachVollFodseAberZahlAuchDuKackBuxe'; // wie in Settings
 const CLIENT_UUID = localStorage.getItem('client_uuid') || (()=>{ const u=crypto.randomUUID(); localStorage.setItem('client_uuid',u); return u; })();
 
